@@ -1,0 +1,44 @@
+<h3>
+    Update Student Marks
+  </h3>
+    <form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="name">Sid</label>
+    <input type="text" class="form-control" id="sid" [(ngModel)]="mark.sid" name="sid">
+  
+  </div>
+  <div class="form-group">
+    <label for="name">Sname</label>
+    <input type="text" class="form-control" id="sname" [(ngModel)]="mark.sname" name="sname">
+  
+  </div>
+  <div class="form-group">
+    <label for="name">Eid</label>
+    <input type="text" class="form-control" id="eid" [(ngModel)]="mark.eid" name="eid">
+  
+  </div>
+  <div class="form-group">
+    <label for="name">Ename</label>
+    <input type="text" class="form-control" id="ename" [(ngModel)]="mark.ename" name="ename">
+  
+  </div>
+  <div class="form-group">
+    <label for="name">Sub1</label>
+    <input type="text" class="form-control" id="sub1" [(ngModel)]="mark.sub1" name="sub1">
+  
+  </div>
+  <div class="form-group">
+    <label for="name">Sub2</label>
+    <input type="text" class="form-control" id="sub2" [(ngModel)]="mark.sub2" name="sub2">
+  
+  </div>
+  <div class="form-group">
+    <label for="name">Sub3</label>
+    <input type="text" class="form-control" id="sub3" [(ngModel)]="mark.sub3" name="sub3">
+  
+  </div>
+  
+  <button style='margin-right:16px' class="btn btn-success">Submit</button>
+  <button style='margin-right:16px' (click)="list()" class="btn btn-success">Back to Students</button>
+  
+  </form>

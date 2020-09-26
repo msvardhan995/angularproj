@@ -1,0 +1,35 @@
+<h3>Create Marks/h3>
+<div [hidden] = "submitted">
+    <form (ngSubmit) = "onSubmit()">
+        <div class="form-group">
+            <label for ="sid">sid</label>
+            <input type="text" class="form-control" id="sid" name="sid" [(ngModel)]="marks.sid">
+        </div>
+        <div class="form-group">
+            <label for ="sname">sname</label>
+            <input type="text" class="form-control" id="sid" name="sname" [(ngModel)]="marks.sname">
+        </div>
+        <div class="form-group">
+            <label for ="eid">eid</label>
+            <input type="text" class="form-control" id="eid" name="eid" [(ngModel)]="marks.eid">
+        </div>
+        <div class="form-group">
+            <label for ="ename">ename</label>
+            <input type="text" class="form-control" id="ename" name="ename" [(ngModel)]="marks.ename">
+        </div>
+        <div class="form-group">
+            <label for ="sub1">sub1</label>
+            <input type="text" class="form-control" id="sub1" name="sub1" [(ngModel)]="marks.sub1">
+        </div>
+        <div class="form-group">
+            <label for ="sub2">sub2</label>
+            <input type="text" class="form-control" id="sub2" name="sub2" [(ngModel)]="marks.sub2">
+        </div>
+        <div class="form-group">
+            <label for ="sub1">sub3</label>
+            <input type="text" class="form-control" id="sub3" name="sub3" [(ngModel)]="marks.sub3">
+        </div>
+        
+        <button class="btn btn-success">Submit</button>
+    </form>
+</div>

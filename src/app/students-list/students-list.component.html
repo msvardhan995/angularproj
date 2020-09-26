@@ -1,0 +1,33 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Student List</h2>
+    </div>
+    <div class="panel-body">
+      <table id="example" class="table table-striped table-bordered table-sm row-border hover" cellspacing="0" width="100%">
+
+        <thead>
+          <tr>
+            <th >Name</th>
+            <th>DOB</th>
+            <th >Email</th>
+            <th >Mobile</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of students | async">
+            <td>{{student.name}}</td>
+            <td>{{student.dob|date:'yyyy-MM-dd'}}</td> 
+            <td>{{student.email}}</td>
+            <td>{{student.mobile}}</td>
+            
+              <td><button style='margin-right:16px' (click)="deleteStudent(student.id)" class="btn btn-danger">Delete</button>
+                <nav>
+                    <a routerLink="/update/id" routerLinkActive="active" button style='margin-right:16px' class="btn btn-success" style="margin-left: 10px">Edit</a>
+                </nav>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

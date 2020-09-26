@@ -1,0 +1,14 @@
+<h3>Create Exam</h3>
+<div [hidden] = "submitted">
+    <form (ngSubmit) = "onSubmit()">
+        <div class="form-group">
+            <label for ="name">ID</label>
+            <input type="text" class="form-control" id="id" name="id" [(ngModel)]="exam.id">
+        </div>
+        <div class="form-group">
+            <label for ="name">Exam-name</label>
+            <input type="text" class="form-control" id="exam-name" name="exam-name" [(ngModel)]="exam.name">
+        </div>
+        <button class="btn btn-success">Submit</button>
+    </form>
+</div>
